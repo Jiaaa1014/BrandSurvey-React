@@ -5,9 +5,24 @@
 ```js
 findDOMNode(this.refs.MyName.value)
 ```
-or
+equal to
 ```js
 this.refs.MyName.value
 ```
 
-this.refs doesnt work on `<FormControl>`
+#### `this.refs` doesnt work at `<FormControl>`
+```html
+<FormControl
+  inputRef={(ref) => { this.input = ref }}
+/>
+```
+```js
+handleNameSubmit(event) {
+    event.preventDefault()
+    this.setState({ name: this.input.value })
+  }
+```
+
+#### using firebase(w/o authentication) uuid
+
+uuid is used to generate unique id.

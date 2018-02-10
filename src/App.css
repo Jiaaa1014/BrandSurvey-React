@@ -34,3 +34,11 @@ form div {
     margin-bottom: 15px;
     sline-height: 2.2em
 }
+
+.button {
+    margin-bottom: 30px
+}
+
+.question_mark {
+    font-size: 4em
+}
