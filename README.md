@@ -25,4 +25,12 @@ handleNameSubmit(event) {
 
 #### using firebase(w/o authentication) uuid
 
-uuid is used to generate unique id.
+`uuid` is used to generate unique id.
+
+part of `firebase` 
+```js
+firebase.database().ref('survey/' + this.state.id).set({
+  name: this.state.name,
+  answers: this.state.answers
+})
+```
