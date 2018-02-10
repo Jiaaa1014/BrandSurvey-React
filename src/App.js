@@ -55,7 +55,6 @@ class App extends Component {
     else answers.q4 = event.target.value
 
     this.setState({ answers })
-    console.log(this.state)
   }
 
   render() {
@@ -84,7 +83,7 @@ class App extends Component {
           </div>
           <div className="main">
             <ControlLabel>What is your favorite Smartphone Brand?</ControlLabel>
-            <Radio type='radio' name="q3" value="Apple" onChange={this.handleQuestionChange}>Windows</Radio>
+            <Radio type='radio' name="q3" value="Apple" onChange={this.handleQuestionChange}>Apple</Radio>
             <Radio type='radio' name="q3" value="Samsung" onChange={this.handleQuestionChange}>Samsung</Radio>
             <Radio type='radio' name="q3" value="LG" onChange={this.handleQuestionChange}>LG</Radio>
             <Radio type='radio' name="q3" value="HTC" onChange={this.handleQuestionChange}>HTC</Radio>
