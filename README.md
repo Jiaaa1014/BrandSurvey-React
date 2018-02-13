@@ -36,9 +36,7 @@ this.state = {
   id: uuid.v1(),
 }
 ```
-
-平常只要ref(`選擇目的地`).set(`資料`)就可以推資料進去firebase儲存，但這次沒有authentication的登入登出系統，所以自建`id`
-然後ref.push().set({})
+每個id都是獨一無二的亂碼路徑，所以直接`set({...})`
 ```js
 firebase.database().ref('survey/' + this.state.id).set({
   name: this.state.name,
